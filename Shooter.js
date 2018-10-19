@@ -32,8 +32,8 @@ class Player extends Sprite {
         if (now - this.spellCastTime >= 2) {
             this.spellCastTime = now;
             let spell = new Spell();
-            spell.x = this.width;
-            spell.y = this.height - this.y;
+            spell.x = this.x;
+            spell.y = this.y - this.height;
             spell.name = "A spell cast by Red";
             spell.angle = 90;
             spell.setImage('marcusSpellSheet.png');
